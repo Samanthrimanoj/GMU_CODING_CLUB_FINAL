@@ -4,6 +4,7 @@ import { Code2, Users, Trophy, Rocket, Calendar, BookOpen } from "lucide-react";
 import { Link } from "react-router-dom";
 import heroBg from "@/assets/hero-bg.jpg";
 import codingWorkspace from "@/assets/coding-workspace.jpg";
+import FloatingAiAssistant from "@/components/FloatingAiAssistant";
 
 export default function Home() {
   const features = [
@@ -46,6 +47,7 @@ export default function Home() {
 
   return (
     <div className="min-h-screen">
+      <FloatingAiAssistant />
       {/* Hero Section */}
       <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
         <div
