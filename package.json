@@ -10,14 +10,6 @@
     "lint": "eslint .",
     "preview": "vite preview"
   },
-  {
-  "name": "GMU CODING CLUB",
-  "version": "0.1.0",
-  "private": true,
-  "homepage": "https://Samanthrimanoj.github.io/GMU_CODING_CLUB_FINAL",
-  "dependencies": {
-  },
-}
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
     "@radix-ui/react-accordion": "^1.2.11",
