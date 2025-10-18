@@ -21,8 +21,12 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  # Build job
-  build:
+  # Build jo
+    build:
+       - name: Upload artifact
+    uses: actions/upload-pages-artifact@v3
+    with:
+    path: './dist' # <-- **Make sure this path is correct!**
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -45,8 +49,11 @@ jobs:
         with:
           path: './dist' 
   
-  # Deployment job
+  # Deployment jo
   deploy:
+     - name: Deploy to GitHub Pages
+  id: deployment
+  uses: actions/deploy-pages@v4
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
