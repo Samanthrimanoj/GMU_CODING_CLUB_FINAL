@@ -16,9 +16,7 @@
   "private": true,
   "homepage": "https://Samanthrimanoj.github.io/GMU_CODING_CLUB_FINAL",
   "dependencies": {
-    // ... your dependencies
   },
-  // ... rest of your package.json
 }
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
